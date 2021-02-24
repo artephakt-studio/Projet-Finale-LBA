@@ -1,0 +1,86 @@
+header {
+    grid-template-columns: 1fr;
+    place-items: center center;
+    line-height: 2rem;
+  }
+
+  header a {
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+  header ul {
+    flex-direction: column;
+    place-self: stretch;
+  }
+
+  header ul li {
+    padding: 0.2rem;
+    align-self: stretch;
+    text-align: center;
+    border-bottom: 1px solid var(--gray-light);
+  }
+
+  header ul li:last-child {
+    display: none;
+  }
+
+  header .logo {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    font-family: "Staatliches", cursive;
+  }
+
+  /*navigation*/
+ 
+  nav {
+    overflow: hidden;
+  }
+  
+  nav a {
+    padding: 0 1rem;
+  }
+
+
+ .first-image{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+
+  /*newsgroup*/
+  .newsgroup {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .newsgroup article:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .newsgroup article:last-child {
+    display: none;
+  }
+
+  /*ads*/
+  .ads {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ads h1 {
+    font-size: 2rem;
+  }
+  
+  .ads img {
+    display: none;
+  }
+
+  /*content*/
+  .populaire {
+    display: none;
+  }
+
